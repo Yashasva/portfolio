@@ -1,0 +1,51 @@
+
+
+
+
+
+@mixin respond($breakpoint) {
+
+    @if $breakpoint==small-phone {
+        @media only screen and (max-width: 28.125em) {
+            @content
+        };
+    }
+
+    @if $breakpoint==phone {
+        @media only screen and (max-width: 37.5em) {
+            @content
+        };
+    }
+
+    @if $breakpoint==tab-port {
+        @media only screen and (max-width: 56.25em) {
+            @content
+        };
+    }
+
+    @if $breakpoint==tab-land {
+        @media only screen and (max-width: 67.185em) {
+            @content
+        };
+    }
+
+    @if $breakpoint==small-desktop {
+        @media only screen and (max-width: 75em) {
+            @content
+        };
+    }
+
+    @if $breakpoint==medium-desktop {
+        @media only screen and (max-width: 87.5em) {
+            @content
+        };
+    }
+
+
+    @if $breakpoint==ipad-pro {
+        @media only screen and (min-width: 1024px) and (max-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+            @content
+        }
+    };
+
+}

@@ -1,4 +1,4 @@
-import './App.css';
+import './scss/style.scss';
 import {Route, Switch} from 'react-router-dom';
 import Home from './Pages/Home';
 import Projects from './Pages/Projects';
