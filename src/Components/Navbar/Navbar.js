@@ -24,6 +24,7 @@ function Navbar(){
       </div>
       <div id="mySidenav" className="sidenav">
         <div className="closebtn" onClick={closeNav}>&times;</div>
+        <Link to='' onClick={closeNav}>Home</Link>
         <Link to='projects' onClick={closeNav}>Projects</Link>
         <Link to='blogs' onClick={closeNav}>Blogs</Link>
       </div>
