@@ -46,3 +46,25 @@
     }
 }
 
+.social{
+    display: flex;
+    justify-content: center;
+
+    .icon{
+        cursor: pointer;
+
+        img{
+            width: 50px;
+            margin: 10px;
+        }
+
+        &:hover{
+            img{
+            width:60px;
+            transition: width 0.2s;
+            }
+        }
+    }
+
+
+}
