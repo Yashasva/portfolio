@@ -1,20 +1,30 @@
-
+import Contact from '../Contact/Contact';
 import profileImage from './GenosTwoFaceMeSmallVer.jpg';
 import linkedin from './linkedin.png';
 import github from './github.png';
 import twitter from './twitter.png';
 
 const Profile = ()=>{
+
+    const contactAlert = (email)=>{
+        alert(email + " your message has been submitted");
+    }
+
     return(
-        <div>
-            <div className="home">
-                <div className="home-image">
-                    <img src={profileImage} alt="Something's supposed to be here"/>
+        <div className="home">
+            <div className="home-container">
+                <div className="profile">
+                    <div className="profile-image">
+                        <img src={profileImage} alt="Something's supposed to be here"/>
+                    </div>
+                    <div className="profile-content">
+                        <p> Here, I have tried to put everything I do and I am interested in at one place. Feel free to look around.
+                        <br/> Connect with me? I love to connect with new people and exchange ideas. Email me at <a href = "mailto: yashasvap@gmail.com">yashasvap@gmail.com</a>
+                        </p>
+                    </div>
                 </div>
-                <div className="home-content">
-                    <p> Here, I have tried to put everything I do and I am interested in at one place. Feel free to look around.
-                    <br/> Connect with me? I love to connect with new people and exchange ideas. Email me at <a href = "mailto: yashasvap@gmail.com">yashasvap@gmail.com</a>
-                    </p>
+                <div className="contact">
+                    <Contact onSubmitForm={contactAlert}/>
                 </div>
             </div>
             <div className="social">

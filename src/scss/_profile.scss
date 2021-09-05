@@ -1,70 +1,103 @@
 .home{
+    &-container{
+        display: flex;
+        justify-content: space-around;
 
-    height: 400px;
-    width: 50%;
-    margin: 2rem auto;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    text-align: center;
-    border-radius: 10px;
+        .contact{
 
-    &:hover{
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    }
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
 
-    @include respond(phone){
-        width: 80%;
-    }
+            text-align: center;
 
-    @include respond(tab-port){
-        width: 80%;
-    }
+            border-radius: 10px;
 
-    &-image{
-        text-align: center;
-        padding: 1rem 0;
+            width: $medium;
+            height: $medium;
 
-        img{
-            width:12em;
-            height: 12em;
-            object-fit: cover;
-            border-radius: 6em;
-        }
+            background-color: $contact_box_color;
+
+            margin: 20px;
         
-    }
+            &-contact :hover{
+                    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+                }
+        }
 
-    &-content{
-        p{
-            margin:1rem;
 
-            a{
-                font-weight: bold;
-                text-decoration: none;
-                color: black;
+        .profile{
+
+            height: $medium;
+            width: $large;
+
+            text-align: center;
+
+            border-radius: 10px;
+
+            margin: 20px;
+        
+            @include respond(phone){
+                width: $small;
+                height: $large;
+            }
+        
+            @include respond(tab-port){
+                width: $medium;
+                height: $large;
+            }
+        
+            &-image{
+                padding: 1rem 0;
+        
+                img{
+                    width:12em;
+                    height: 12em;
+                    object-fit: cover;
+                    border-radius: 6em;
+                }   
+            }
+        
+            &-content{
+                p{
+                    margin:1rem;
+        
+                    a{
+                        font-weight: bold;
+                        text-decoration: none;
+                        color: blue;
+                    }
+                }
             }
         }
     }
-}
 
-.social{
-    display: flex;
-    justify-content: center;
+    .social{
 
-    .icon{
-        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        margin: 30px;
+    
+        .icon{
 
-        img{
-            width: 50px;
-            margin: 10px;
-        }
-
-        &:hover{
+            cursor: pointer;
+    
             img{
-            width:60px;
-            transition: width 0.2s;
+                width: 50px;
+                margin: 10px;
+            }
+    
+            &:hover{
+                img{
+
+                    width:60px;
+                    transition: width 0.2s;
+                }
             }
         }
     }
-
-
 }
+
+
+
+
+
