@@ -7,7 +7,7 @@ import twitter from './twitter.png';
 const Profile = ()=>{
 
     const contactAlert = (email)=>{
-        alert(email + " your message has been submitted");
+        alert(email + ": Thank you for reaching out to me. I will get back to you soon!");
     }
 
     return(
