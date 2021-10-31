@@ -37,9 +37,9 @@ const Profile = ()=>{
                        
                 </a>
                 </div>
-                <div className="contact" id="contact">
+                {/* <div className="contact" id="contact">
                     <Contact onSubmitForm={contactAlert}/>
-                </div>
+                </div> */}
             </div>
             <div className="social">
                 <div className="icon"><a href="https://www.linkedin.com/in/yashasva-paras-ab8833144/" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="Linkedin"/></a></div>
