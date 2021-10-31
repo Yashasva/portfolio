@@ -9,13 +9,13 @@
 
 
         @include respond(phone){
-            width: $large;
+            width: $medium;
             flex-direction: column;
             align-items: center;
         }
 
         @include respond(tab-port){
-            width: $large;
+            width: $medium;
             flex-direction: column;
             align-items: center;
         }
@@ -31,6 +31,10 @@
                         width: 1.5rem;
                     }
                 }
+            }
+
+            @include respond(phone){
+                width: 400px
             }
         }
 
@@ -98,7 +102,7 @@
 
             @include respond(phone){
                 width: 300px;
-                height: 500px;
+                height: 550px;
             }
         
             &-image{
