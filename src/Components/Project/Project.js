@@ -9,8 +9,8 @@ function Project(props){
                 <p>{props.desc}</p>
 
                 <div className="btns">
-                    <div className="btn"><a href={props.demo} target="_blank" rel="noopener noreferrer">Live Demo</a></div>
-                    <div className="btn"><a href={props.github} target="_blank" rel="noopener noreferrer">Github</a></div>
+                    <a href={props.demo} target="_blank" rel="noopener noreferrer"><button className="btn">Live Demo</button></a>
+                    <a href={props.github} target="_blank" rel="noopener noreferrer"><button className="btn">Github</button></a>
                 </div>
             </div>
         </div>

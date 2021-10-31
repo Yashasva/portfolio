@@ -1,8 +1,11 @@
 import Contact from '../Contact/Contact';
 import profileImage from './GenosTwoFaceMeSmallVer.jpg';
-import linkedin from './linkedin.png';
-import github from './github.png';
-import twitter from './twitter.png';
+import linkedin from '../../Content/icons/linkedin.png';
+import github from '../../Content/icons/github.png';
+import twitter from '../../Content/icons/twitter.png';
+import hi from '../../Content/icons/hi.png';
+import rocket from '../../Content/icons/rocket.png';
+import downarrow from '../../Content/icons/downarrow.png';
 
 const Profile = ()=>{
 
@@ -18,12 +21,23 @@ const Profile = ()=>{
                         <img src={profileImage} alt="Something's supposed to be here"/>
                     </div>
                     <div className="profile-content">
-                        <p> Here, I have tried to put everything I do and I am interested in at one place. Feel free to look around.
-                        <br/> Connect with me? I love to connect with new people and exchange ideas. Email me at <a href = "mailto: yashasvap@gmail.com">yashasvap@gmail.com</a>
+                        <p> Hi, Nice to meet you. <img src={hi} alt="hi"/> I am a Full Stack Developer with a quirky mind. <img src={rocket} alt="hi"/>
+                            I am keenly interested <span>Web Development, art and music</span>. Please feel free to look around!
+                        <br/> Also, I love meeting new people so feel free to drop a message if you'd like to connect or mail me @
+                            <a href = "mailto: yashasvap@gmail.com"> yashasvap@gmail.com</a>
                         </p>
                     </div>
+                    <div>
+                        <button className="btn">Read More</button>
+                    </div>
                 </div>
-                <div className="contact">
+                <div className="nav-contact">
+                <a href="#contact">
+                    <button className="btn">Contact</button>
+                       
+                </a>
+                </div>
+                <div className="contact" id="contact">
                     <Contact onSubmitForm={contactAlert}/>
                 </div>
             </div>

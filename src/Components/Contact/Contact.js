@@ -42,7 +42,7 @@ function Contact(props){
     }
 
      return <form onSubmit={submitHandler}>
-         <h3>CONTACT ME!</h3>
+         <h3 className="contact-heading">CONTACT ME!</h3>
          <div className="form-input">
             <input type="text" placeholder="email" onChange={emailHandler} value={email}/>
          </div>

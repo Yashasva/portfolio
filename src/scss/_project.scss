@@ -1,9 +1,10 @@
 .project{
 
     height: 350px;
-    width: 50%;
+    width: 60%;
     margin: 2rem auto;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-image: linear-gradient(to bottom right, #808080, white);
     transition: 0.3s;
     border-radius: 10px;
     display: flex;
@@ -16,19 +17,22 @@
 
     @include respond(phone){
         width: 80%;
+        height: 400px;
     }
 
     @include respond(tab-port){
         width: 80%;
+        height: 400px;
     }
 
     @include respond(tab-land){
         width: 80%;
+        height: 400px;
     }
 
     .image{
         max-width: 50%;
-        padding-left: 5px;
+        padding-left: 20px;
 
         @include respond(phone){
             display: none;
@@ -51,6 +55,18 @@
             display: flex;
             align-items: center;
             justify-content: center;
+        }
+
+        @include respond(phone){
+            p{
+                padding: 1.5rem;
+            }
+        }
+    
+        @include respond(tab-port){
+            p{
+                padding: 1.5rem;
+            }
         }
 
     }
