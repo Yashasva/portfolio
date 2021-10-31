@@ -9,11 +9,13 @@
 
 
         @include respond(phone){
+            width: $large;
             flex-direction: column;
             align-items: center;
         }
 
         @include respond(tab-port){
+            width: $large;
             flex-direction: column;
             align-items: center;
         }
